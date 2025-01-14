@@ -50,13 +50,49 @@ function logger(arg){
 logger('hello')
 
 //Arrow function with _
-const num = _ =>10
+const ten = _ =>10
 const rslt = ten()
 console.log(rslt) 
 
 //Arrow function with ()
-const ten=()=>10
-const result =ten()
+const num=()=>10
+const result =num()
 console.log(result)
 
+//objects
+
+//Empty object
+const obj={}
+
+//Dot notation
+const aobj={
+    firstnam:"Dhruv"
+}
+console.log(aobj.firstnam)
+
+//Bracket notation
+const anobj={
+    firstnam:"Dhruv"
+}
+console.log(anobj['firstnam'])
+
+/*set value of a property by dot notation
+const dotobj={
+    dotobj.lastnam="Gupta"
+}
+console.log(dotobj.lastnam)
+
+//set value of a property by bracket notation
+const bracketobj={
+    bracketobj['lastnam']="Gupta"
+}
+console.log(bracketobj[lastnam])*/
+
+//function in object
+const anobject={
+    sayname:function (){
+        console.log('my name is Dhruv')
+    }
+}
+anobject.sayname()
 
